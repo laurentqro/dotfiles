@@ -25,6 +25,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
 Plug 'scrooloose/syntastic'
+Plug 'ervandew/supertab'
 
 "" Languages
 Plug 'thoughtbot/vim-rspec'
