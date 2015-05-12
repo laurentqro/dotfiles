@@ -35,6 +35,7 @@ Plug 'kchmck/vim-coffee-script'
 
 "" Git
 Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
 
 call plug#end()
 
@@ -85,6 +86,11 @@ endfunction
 function! LightlineFileEncoding()
   return ''
 endfunction
+
+" -----------------------------------------------------------------------------
+" vim-signify
+" -----------------------------------------------------------------------------
+let g:signify_vcs_list = ['git']
 
 " -----------------------------------------------------------------------------
 " General Settings
