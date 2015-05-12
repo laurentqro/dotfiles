@@ -11,14 +11,24 @@
 
 call plug#begin("~/.vim/plugged")
 
+"" UI
 Plug 'junegunn/seoul256.vim'
-Plug 'tpope/vim-rails'
-Plug 'kien/ctrlp.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/rainbow_parentheses.vim'
-Plug 'thoughtbot/vim-rspec'
-Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
+Plug 'junegunn/rainbow_parentheses.vim'
+
+"" Navigation
+Plug 'kien/ctrlp.vim'
+
+"" Editing
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
+"" Languages
+Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-rails'
+
+"" Git
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
