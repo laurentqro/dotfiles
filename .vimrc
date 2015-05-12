@@ -22,6 +22,7 @@ Plug 'kien/ctrlp.vim'
 "" Editing
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
 
 "" Languages
 Plug 'thoughtbot/vim-rspec'
