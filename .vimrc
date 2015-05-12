@@ -30,6 +30,7 @@ Plug 'ervandew/supertab'
 "" Languages
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-rails'
+Plug 'pangloss/vim-javascript'
 
 "" Git
 Plug 'tpope/vim-fugitive'
