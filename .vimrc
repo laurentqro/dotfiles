@@ -17,6 +17,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
