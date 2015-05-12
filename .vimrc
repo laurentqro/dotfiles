@@ -31,6 +31,7 @@ Plug 'ervandew/supertab'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-rails'
 Plug 'pangloss/vim-javascript'
+Plug 'kchmck/vim-coffee-script'
 
 "" Git
 Plug 'tpope/vim-fugitive'
