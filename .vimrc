@@ -24,6 +24,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
+Plug 'scrooloose/syntastic'
 
 "" Languages
 Plug 'thoughtbot/vim-rspec'
@@ -42,6 +43,17 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
+
+" -----------------------------------------------------------------------------
+" syntastic
+" -----------------------------------------------------------------------------
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_ruby_checkers = ['mri']
+let g:syntastic_error_symbol = "☠"
+let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_style_error_symbol = "☢"
+let g:syntastic_style_warning_symbol = "☹"
 
 " -----------------------------------------------------------------------------
 " lightline
