@@ -18,6 +18,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-fugitive'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
@@ -29,6 +30,34 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
+
+" -----------------------------------------------------------------------------
+" lightline
+" -----------------------------------------------------------------------------
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'fugitive': 'LightlineFugitive',
+      \   'fileformat': 'LightlineFileFormat',
+      \   'fileencoding': 'LightlineFileEncoding',
+      \ }
+      \ }
+
+function! LightlineFugitive()
+  return exists('*fugitive#head') ? fugitive#head() : ''
+endfunction
+
+function! LightlineFileFormat()
+  return ''
+endfunction
+
+function! LightlineFileEncoding()
+  return ''
+endfunction
 
 " -----------------------------------------------------------------------------
 " General Settings
