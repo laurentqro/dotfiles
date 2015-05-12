@@ -23,6 +23,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-repeat'
 
 "" Languages
 Plug 'thoughtbot/vim-rspec'
