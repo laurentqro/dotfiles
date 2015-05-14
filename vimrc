@@ -4,6 +4,9 @@
 "        Heavily inspired by Gus Bonfante and Will Raxworthy dotfiles. :)
 " ------------------------------------------------------------------------------
 
+" Set leader key to space
+let mapleader=" "
+
 " Set encoding to UTF-8
 scriptencoding utf-8
 set encoding=utf-8
@@ -213,9 +216,6 @@ set laststatus=2
 
 " Don't show default vim mode information
 set noshowmode
-
-" Set leader key to space
-let mapleader="\<space>"
 
 " -----------------------------------------------------------------------------
 " vim-rspec
