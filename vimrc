@@ -50,6 +50,10 @@ call plug#end()
 " Mappings
 " ------------------------------------------------------------------------------
 
+" Type jj to escape
+imap jj <Esc>
+
+" Arrow keys no op
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
