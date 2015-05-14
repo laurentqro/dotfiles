@@ -30,7 +30,12 @@ alias nom="rm -rf node_modules && npm cache clean && npm install"
 alias bom="rm -rf bower_components && bower cache clean && bower install"
 alias nombom="nom && bom"
 
+alias ctags="`brew --prefix`/bin/ctags"
+
 export TERM=xterm-256color
 export PATH="$HOME/.rbenv/bin:$PATH"
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 eval "$(rbenv init -)"
