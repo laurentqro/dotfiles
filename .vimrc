@@ -47,12 +47,35 @@ call plug#end()
 " ------------------------------------------------------------------------------
 " Mappings
 " ------------------------------------------------------------------------------
+
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
-inoremap jj <ESC>
+" easy pane navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-L> <C-W>
+
+" easy switching between last two files
+nnoremap <Leader><Leader> <C-^>
+
+" copy current file path
+nnoremap <silent> <Leader>p :let @* = expand("%")<CR>
+
+" easy global search
+nnoremap <C-S> :Ag <C-R><C-W><CR>
+vnoremap <C-S> y<Esc>:Ag '<C-R>"'<CR>
+
+" vimrc manipulation
+nnoremap <Leader>vv :vsplit $MYVIMRC<CR>
+nnoremap <Leader>sv :source $MYVIMRC<CR>
+
+" open file in same folder
+cnoremap %% <C-R>=expand('%:h').'/'<CR>
+nmap <Leader>e :e %%
 
 " -----------------------------------------------------------------------------
 " syntastic
