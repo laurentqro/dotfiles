@@ -5,6 +5,7 @@
   di = diff
   dc = diff --cached
   addp = add -p .
+  st = status
 
   # log
   l = log --oneline --decorate --graph -20
@@ -13,3 +14,8 @@
 
   # list aliases
   al = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+
+[user]
+  name = Laurent Curau
+  email = laurent.curau@alphasights.com
+  username = laurentqro
