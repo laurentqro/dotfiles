@@ -23,8 +23,8 @@ alias c="cd"
 alias s="spring"
 alias be="bundle exec"
 
-alias v='nvim'
-alias vim='nvim'
+alias v='vim'
+alias vim='vim'
 
 alias nom="rm -rf node_modules && npm cache clean && npm install"
 alias bom="rm -rf bower_components && bower cache clean && bower install"
