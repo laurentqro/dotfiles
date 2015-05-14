@@ -31,3 +31,6 @@ alias bom="rm -rf bower_components && bower cache clean && bower install"
 alias nombom="nom && bom"
 
 export TERM=xterm-256color
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+eval "$(rbenv init -)"

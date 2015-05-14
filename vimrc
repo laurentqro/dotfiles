@@ -1,4 +1,3 @@
-" ------------------------------------------------------------------------------
 "          FILE: .vimrc
 "   DESCRIPTION: Vim configuration file.
 "        AUTHOR: Laurent Curau
