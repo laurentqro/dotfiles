@@ -1,9 +1,11 @@
-" ------------------------------------------------------------------------------
 "          FILE: .vimrc
 "   DESCRIPTION: Vim configuration file.
 "        AUTHOR: Laurent Curau
 "        Heavily inspired by Gus Bonfante and Will Raxworthy dotfiles. :)
 " ------------------------------------------------------------------------------
+
+" Set leader key to space
+let mapleader=" "
 
 " Set encoding to UTF-8
 scriptencoding utf-8
@@ -48,6 +50,10 @@ call plug#end()
 " Mappings
 " ------------------------------------------------------------------------------
 
+" Type jj to escape
+imap jj <Esc>
+
+" Arrow keys no op
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
@@ -214,9 +220,6 @@ set laststatus=2
 
 " Don't show default vim mode information
 set noshowmode
-
-" Set leader key to space
-let mapleader="\<space>"
 
 " -----------------------------------------------------------------------------
 " vim-rspec

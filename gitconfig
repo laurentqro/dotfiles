@@ -5,6 +5,7 @@
   di = diff
   dc = diff --cached
   addp = add -p .
+  st = status
 
   # log
   l = log --oneline --decorate --graph -20
@@ -13,3 +14,30 @@
 
   # list aliases
   al = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+
+[user]
+  name = Laurent Curau
+  email = laurent.curau@alphasights.com
+  username = laurentqro
+
+[color]
+  ui = auto
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
+
+[push]
+  default = matching
