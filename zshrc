@@ -31,3 +31,5 @@ alias bom="rm -rf bower_components && bower cache clean && bower install"
 alias nombom="nom && bom"
 
 export TERM=xterm-256color
+
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
