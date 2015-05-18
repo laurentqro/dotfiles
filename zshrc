@@ -37,5 +37,5 @@ export TERM=xterm-256color
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-eval "$(rbenv init -)"
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+eval "$(rbenv init -)"
