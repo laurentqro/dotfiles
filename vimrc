@@ -23,6 +23,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 
 "" Navigation
+Plug 'rking/ag.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'justinmk/vim-gtfo'
 
