@@ -40,7 +40,7 @@
   untracked = red
 
 [push]
-  default = matching
+  default = nothing
 
 [core]
   editor = vim
