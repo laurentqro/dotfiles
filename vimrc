@@ -148,9 +148,6 @@ set lazyredraw
 " Maximum column number to highlight
 set synmaxcol=250
 
-" Display column at 80 characters
-set colorcolumn=80
-
 " Show (relative) line numbers
 set number
 set relativenumber
