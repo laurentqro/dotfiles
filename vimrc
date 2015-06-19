@@ -19,6 +19,7 @@ call plug#begin("~/.vim/plugged")
 
 "" UI
 Plug 'junegunn/seoul256.vim'
+Plug 'altercation/vim-colors-solarized'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 
@@ -137,7 +138,7 @@ syntax enable
 
 " Set colorscheme
 set background=dark
-colorscheme desert
+colorscheme solarized
 
 " Notify of running fast terminal, improves redrawing
 set ttyfast
