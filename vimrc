@@ -228,3 +228,9 @@ nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
 nnoremap <Leader>a :call RunAllSpecs()<CR>
+
+" -----------------------------------------------------------------------------
+" I am only human
+" -----------------------------------------------------------------------------
+command! W w
+command! Q q
