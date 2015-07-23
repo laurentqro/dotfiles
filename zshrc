@@ -32,8 +32,6 @@ alias nombom="nom && bom"
 
 alias ctags="`brew --prefix`/bin/ctags"
 
-export TERM=xterm-256color
-
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
