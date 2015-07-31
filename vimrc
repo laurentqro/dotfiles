@@ -37,10 +37,10 @@ Plug 'scrooloose/syntastic'
 Plug 'ervandew/supertab'
 
 "" Languages
-Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-rails'
 Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
+Plug 'skalnik/vim-vroom'
 
 "" Git
 Plug 'tpope/vim-fugitive'
@@ -221,13 +221,15 @@ set laststatus=2
 set noshowmode
 
 " -----------------------------------------------------------------------------
-" vim-rspec
+" vroom
 " -----------------------------------------------------------------------------
 
-nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
-nnoremap <Leader>s :call RunNearestSpec()<CR>
-nnoremap <Leader>l :call RunLastSpec()<CR>
-nnoremap <Leader>a :call RunAllSpecs()<CR>
+au FileType ruby nmap <Leader>t <CR>:VroomRunTestFile<CR>
+au FileType ruby nmap <Leader>s <CR>:VroomRunNearestTest<CR>
+
+let g:vroom_use_spring = 1
+let g:vroom_map_keys = 0
+let g:vroom_write_all = 1
 
 " -----------------------------------------------------------------------------
 " I am only human
