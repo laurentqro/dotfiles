@@ -35,5 +35,4 @@ alias ctags="`brew --prefix`/bin/ctags"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-eval "$(rbenv init -)"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
