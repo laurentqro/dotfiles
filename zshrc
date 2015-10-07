@@ -1,27 +1,23 @@
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+export TERM=xterm-256color
 
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+export ZSH=$HOME/.oh-my-zsh
 
-# Source base16 256 colourspace script.
-if [[ -s "$HOME/.colours/base16-shell/base16-tomorrow.dark.sh" ]]; then
-  source "$HOME/.colours/base16-shell/base16-tomorrow.dark.sh"
-fi
+export ZSH_THEME="pure"
+[ -e $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
+
+export EDITOR=vim
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Aliases
+
 alias t="tmux"
 alias tat="tmux attach -t"
-alias g="git"
-alias be="bundle exec"
 
-alias v='vim'
-alias vim='vim'
+alias g="git"
+alias gs="git status"
+
+alias be="bundle exec"
 
 alias nom="rm -rf node_modules && npm cache clean && npm install"
 alias bom="rm -rf bower_components && bower cache clean && bower install"
