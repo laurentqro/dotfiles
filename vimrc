@@ -3,7 +3,6 @@
 "        AUTHOR: Laurent Curau
 "        Heavily inspired by Gus Bonfante and Will Raxworthy dotfiles. :)
 " ------------------------------------------------------------------------------
-
 " Set leader key to space
 let mapleader=" "
 
@@ -104,25 +103,15 @@ let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+      \             [ 'fugitive', 'filename', 'modified' ] ]
       \ },
       \ 'component_function': {
       \   'fugitive': 'LightlineFugitive',
-      \   'fileformat': 'LightlineFileFormat',
-      \   'fileencoding': 'LightlineFileEncoding',
       \ }
       \ }
 
 function! LightlineFugitive()
   return exists('*fugitive#head') ? fugitive#head() : ''
-endfunction
-
-function! LightlineFileFormat()
-  return ''
-endfunction
-
-function! LightlineFileEncoding()
-  return ''
 endfunction
 
 " -----------------------------------------------------------------------------
@@ -236,4 +225,5 @@ let g:vroom_write_all = 1
 " I am only human
 " -----------------------------------------------------------------------------
 command! W w
+
 command! Q q
