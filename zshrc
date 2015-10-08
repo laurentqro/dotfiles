@@ -5,10 +5,10 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="pure"
 [ -e $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
 
-export EDITOR=vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # Aliases
-
 alias t="tmux"
 alias tat="tmux attach -t"
 
@@ -26,9 +26,6 @@ alias ctags="`brew --prefix`/bin/ctags"
 # pg
 alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
-
-export VISUAL=vim
-export EDITOR="$VISUAL"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
