@@ -1,9 +1,9 @@
 export TERM=xterm-256color
 
 export ZSH=$HOME/.oh-my-zsh
-
 export ZSH_THEME="pure"
 [ -e $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
+plugins=(git)
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -29,4 +29,5 @@ alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
