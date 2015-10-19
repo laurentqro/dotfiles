@@ -41,6 +41,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
 Plug 'skalnik/vim-vroom'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'elixir-lang/vim-elixir'
 
 "" Git
 Plug 'tpope/vim-fugitive'
