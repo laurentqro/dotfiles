@@ -24,7 +24,7 @@ Plug 'junegunn/rainbow_parentheses.vim'
 
 "" Navigation
 Plug 'rking/ag.vim'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'justinmk/vim-gtfo'
 
 "" Editing
