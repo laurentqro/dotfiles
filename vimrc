@@ -219,6 +219,10 @@ set laststatus=2
 " Don't show default vim mode information
 set noshowmode
 
+" Exclude files and directories
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
 " -----------------------------------------------------------------------------
 " vroom
 " -----------------------------------------------------------------------------
