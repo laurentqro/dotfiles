@@ -9,6 +9,8 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # Aliases
+alias r="rails"
+alias dbm="db:migrate"
 alias t="tmux"
 alias tat="tmux attach -t"
 
