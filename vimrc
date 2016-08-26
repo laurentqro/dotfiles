@@ -71,6 +71,19 @@ nnoremap <C-K> <C-W>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W>
 
+" Go to last migration file
+map <Leader>m :Rmigration<CR>
+
+" Go to Gemfile
+map <Leader>g :sp Gemfile<CR>
+
+" Rails
+map <Leader>em :Emodel<CR>
+map <Leader>ec :Econtroller<CR>
+
+map <Leader>vm :Vmodel<CR>
+map <Leader>vc :Vcontroller<CR>
+
 " easy switching between last two files
 nnoremap <Leader><Leader> <C-^>
 
