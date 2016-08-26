@@ -25,6 +25,7 @@ Plug 'junegunn/rainbow_parentheses.vim'
 "" Navigation
 Plug 'rking/ag.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'JazzCore/ctrlp-cmatcher'
 Plug 'justinmk/vim-gtfo'
 
 "" Editing
@@ -121,6 +122,11 @@ endfunction
 " vim-signify
 " -----------------------------------------------------------------------------
 let g:signify_vcs_list = ['git']
+
+" -----------------------------------------------------------------------------
+" ctrlp-matcher
+" -----------------------------------------------------------------------------
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 
 " -----------------------------------------------------------------------------
 " General Settings
