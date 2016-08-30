@@ -80,9 +80,11 @@ map <Leader>g :sp Gemfile<CR>
 " Rails
 map <Leader>em :Emodel<CR>
 map <Leader>ec :Econtroller<CR>
+map <Leader>et :Eunittest<CR>
 
 map <Leader>vm :Vmodel<CR>
 map <Leader>vc :Vcontroller<CR>
+map <Leader>vt :Vunittest<CR>
 
 " easy switching between last two files
 nnoremap <Leader><Leader> <C-^>
