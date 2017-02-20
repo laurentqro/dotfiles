@@ -141,6 +141,9 @@ let g:signify_vcs_list = ['git']
 " ctrlp-matcher
 " -----------------------------------------------------------------------------
 let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " -----------------------------------------------------------------------------
 " General Settings
@@ -235,7 +238,6 @@ set noshowmode
 
 " Exclude files and directories
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " -----------------------------------------------------------------------------
 " vroom
