@@ -165,9 +165,8 @@ set lazyredraw
 " Maximum column number to highlight
 set synmaxcol=250
 
-" Show (relative) line numbers
+" Show line numbers
 set number
-set relativenumber
 
 " Enable autoindent
 set autoindent
