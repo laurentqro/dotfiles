@@ -17,7 +17,6 @@ set encoding=utf-8
 call plug#begin("~/.vim/plugged")
 
 "" UI
-Plug 'junegunn/seoul256.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
@@ -253,5 +252,5 @@ let g:vroom_write_all = 1
 " I am only human
 " -----------------------------------------------------------------------------
 command! W w
-
 command! Q q
+
