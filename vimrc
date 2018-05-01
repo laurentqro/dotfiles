@@ -25,7 +25,6 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'rking/ag.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'JazzCore/ctrlp-cmatcher'
-Plug 'justinmk/vim-gtfo'
 
 "" Editing
 Plug 'tpope/vim-commentary'
