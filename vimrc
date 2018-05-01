@@ -38,7 +38,6 @@ Plug 'ervandew/supertab'
 "" Languages
 Plug 'tpope/vim-rails'
 Plug 'pangloss/vim-javascript'
-Plug 'kchmck/vim-coffee-script'
 Plug 'elixir-lang/vim-elixir'
 Plug 'lambdatoast/elm.vim'
 
