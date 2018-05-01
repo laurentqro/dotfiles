@@ -39,7 +39,6 @@ Plug 'ervandew/supertab'
 Plug 'tpope/vim-rails'
 Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
-Plug 'skalnik/vim-vroom'
 Plug 'joukevandermaas/vim-ember-hbs'
 Plug 'elixir-lang/vim-elixir'
 Plug 'lambdatoast/elm.vim'
@@ -236,17 +235,6 @@ set noshowmode
 
 " Exclude files and directories
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-
-" -----------------------------------------------------------------------------
-" vroom
-" -----------------------------------------------------------------------------
-
-au FileType ruby nmap <Leader>t <CR>:VroomRunTestFile<CR>
-au FileType ruby nmap <Leader>s <CR>:VroomRunNearestTest<CR>
-
-let g:vroom_use_spring = 1
-let g:vroom_map_keys = 0
-let g:vroom_write_all = 1
 
 " -----------------------------------------------------------------------------
 " I am only human
