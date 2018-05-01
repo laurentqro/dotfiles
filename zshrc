@@ -1,7 +1,7 @@
 export TERM=xterm-256color
 
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_THEME="refined"
+export ZSH_THEME="robbyrussell"
 [ -e $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
 plugins=(git)
 
