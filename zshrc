@@ -9,7 +9,6 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # Aliases
-alias vim='mvim -v'
 alias r="rails"
 alias dbm="db:migrate"
 alias t="tmux"
