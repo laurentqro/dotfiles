@@ -12,9 +12,12 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # Aliases
-alias r="rails"
 alias g="git"
-alias be="bundle exec"
 alias ctags="`brew --prefix`/bin/ctags"
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(jenv init -)"
 eval "$(rbenv init -)"
