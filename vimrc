@@ -128,12 +128,11 @@ endfunction
 let g:signify_vcs_list = ['git']
 
 " -----------------------------------------------------------------------------
-" ctrlp-matcher
+" FZF
 " -----------------------------------------------------------------------------
-let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
-let g:ctrlp_max_files=0
-let g:ctrlp_max_depth=40
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+" Ctrl P summons FZF
+map <C-P> :FZF<CR>
 
 " -----------------------------------------------------------------------------
 " General Settings
