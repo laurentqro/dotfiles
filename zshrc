@@ -1,5 +1,7 @@
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/bin:/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="$HOME/.nvm/versions/node/v6.5.0/bin:$PATH"
 
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="robbyrussell"
