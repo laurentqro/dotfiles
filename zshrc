@@ -13,6 +13,7 @@ export EDITOR="$VISUAL"
 
 # Aliases
 alias g="git"
+alias vim="nvim"
 alias ctags="`brew --prefix`/bin/ctags"
 
 export NVM_DIR="$HOME/.nvm"
