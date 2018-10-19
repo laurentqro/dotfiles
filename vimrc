@@ -23,8 +23,7 @@ Plug 'junegunn/rainbow_parentheses.vim'
 
 "" Navigation
 Plug 'rking/ag.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'JazzCore/ctrlp-cmatcher'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 "" Editing
 Plug 'tpope/vim-commentary'

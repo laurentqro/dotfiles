@@ -22,3 +22,5 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(jenv init -)"
 eval "$(rbenv init -)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
