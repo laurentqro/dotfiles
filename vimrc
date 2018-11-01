@@ -138,6 +138,10 @@ map <C-P> :FZF<CR>
 " General Settings
 " -----------------------------------------------------------------------------
 
+" Cursor lines
+set cursorline " highlight the current line the cursor is on
+set cuc cul    " highlight the current column the cursor is on
+
 " Enable syntax highlighting
 syntax enable
 
