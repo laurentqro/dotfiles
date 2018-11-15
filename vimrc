@@ -14,7 +14,7 @@ set encoding=utf-8
 " Plugins
 " ------------------------------------------------------------------------------
 
-call plug#begin("~/.vim/plugged")
+call plug#begin("~/.local/share/nvim/plugged")
 
 "" UI
 Plug 'altercation/vim-colors-solarized'
