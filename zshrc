@@ -1,4 +1,4 @@
-export PATH="/usr/bin:/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/Cellar:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
 export PATH="$HOME/.nvm/versions/node/v6.5.0/bin:$PATH"
