@@ -1,7 +1,7 @@
 "          FILE: .vimrc
 "   DESCRIPTION: Vim configuration file.
 "        AUTHOR: Laurent Curau
-"        Heavily inspired by Gus Bonfante and Will Raxworthy dotfiles. :)
+"
 " ------------------------------------------------------------------------------
 " Set leader key to space
 let mapleader=" "
@@ -14,10 +14,10 @@ set encoding=utf-8
 " Plugins
 " ------------------------------------------------------------------------------
 
-call plug#begin("~/.local/share/nvim/plugged")
+call plug#begin()
 
 "" UI
-Plug 'altercation/vim-colors-solarized'
+Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 
@@ -147,7 +147,7 @@ syntax enable
 
 " Set colorscheme
 set background=dark
-colorscheme solarized
+colorscheme nord
 
 " Notify of running fast terminal, improves redrawing
 set ttyfast
