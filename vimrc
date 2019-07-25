@@ -37,7 +37,7 @@ Plug 'ervandew/supertab'
 Plug 'tpope/vim-rails'
 Plug 'pangloss/vim-javascript'
 Plug 'elixir-lang/vim-elixir'
-Plug 'lambdatoast/elm.vim'
+Plug 'elmcast/elm-vim'
 
 "" Git
 Plug 'tpope/vim-fugitive'
