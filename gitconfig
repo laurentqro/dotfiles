@@ -17,7 +17,7 @@
 
 [user]
   name = Laurent Curau
-  email = laurentcurau@gmail.com
+  email = hello@laurentcurau.com
   username = laurentqro
 
 [color]
@@ -31,7 +31,7 @@
 
 [core]
   editor = vim
-	excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore_global
 
 [pull]
   rebase = true
