@@ -1,10 +1,15 @@
 export PATH="/usr/local/Cellar:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:$PATH"
-export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.nodenv/shims:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
-export PATH="$HOME/.nvm/versions/node/v6.5.0/bin:$PATH"
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="robbyrussell"
+
+export PYENV_ROOT="$HOME/.pyenv"
+
 [ -e $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
 plugins=(git)
 
@@ -13,15 +18,18 @@ export EDITOR="$VISUAL"
 
 # Aliases
 alias g="git"
+alias k="kubectl"
 alias vim="nvim"
 alias ctags="`brew --prefix`/bin/ctags"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-eval "$(jenv init -)"
 eval "$(rbenv init -)"
-eval "$(pyenv init -)"
+eval "$(nodenv init -)"
+eval "$(jenv init -)"
+
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
