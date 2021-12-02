@@ -25,11 +25,10 @@ alias ctags="`brew --prefix`/bin/ctags"
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 eval "$(jenv init -)"
-
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+[ -f "~/.ghcup/env" ] && source "~/.ghcup/env" # ghcup-env
