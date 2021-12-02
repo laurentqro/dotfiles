@@ -149,6 +149,9 @@ syntax enable
 set background=dark
 colorscheme nord
 
+" Set Ruby filetype for Thor task files
+au BufRead,BufNewFile *.thor set filetype=ruby
+
 " Notify of running fast terminal, improves redrawing
 set ttyfast
 
